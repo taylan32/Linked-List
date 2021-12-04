@@ -94,7 +94,7 @@ void insert(student_t** sPtr, int value) {
 
 	newPtr = (student_t*)malloc(sizeof(student_t)); // create new node on heap
 
-	if (newPtr != NULL) { // is space avaibl the list is not empty
+	if (newPtr != NULL) { //  the list is not empty
 		newPtr->id = value; // place value in node
 		newPtr->next = NULL;
 		currentPtr = *sPtr;
@@ -118,7 +118,7 @@ void insert(student_t** sPtr, int value) {
 
 	} // end if
 	else {
-		printf("%d could not be inserted. No avaible space\n", value);
+		printf("%d could not be inserted. No space\n", value);
 	} // end else
 
 
@@ -173,4 +173,4 @@ void printList(student_t* currentPtr) {
 		} // end while
 	}
 	printf("NULL\n");
-} // end function that prints the list
+} // end  print function
